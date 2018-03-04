@@ -79,7 +79,7 @@ class KodiWS (threading.Thread):
                 ##                            u'file': u'nfs://1.2.3.4/mov/A directory/A movie.mkv',
                 ##                            u'label': u'A movie.mkv'}}}
                 file_path = r['result']['item']['file'].split('/')
-                directory = str(file_path[-2])
+                directory = str(file_path[5])
                 file_name = str(file_path[-1])
                 #print("Directory: %s" % directory)
                 #print("File     : %s" % file_name)
