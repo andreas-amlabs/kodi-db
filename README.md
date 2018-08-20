@@ -28,4 +28,7 @@ or via automation
     to: playing
   action:
     service: shell_command.store_in_kodi
+    
+shell_command:
+  store_in_kodi: '/home/homeassistant/kodi-db.py -k kodi.inet:9090 -s sql.inet'
 ```
